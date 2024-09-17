@@ -1,0 +1,108 @@
+@import "../../util/variables.scss";
+
+.user-list-container {
+  display: flex;
+  width: 100%;
+}
+
+.user-form-container {
+  width: 40%;
+}
+
+.user-table-container {
+  width: 60%;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid $border-color;
+}
+
+.user-table th {
+  background-color: $background-color;
+}
+
+.user-table button {
+  padding: 5px 10px;
+  background-color: $primary-color;
+  margin-right: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+}
+
+.user-table button:last-child {
+  background-color: $danger-color;
+
+  &:hover {
+    background-color: $danger-color-hover;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}
+
+.pagination span {
+  font-size: 16px;
+}
+
+.page-size-selector {
+  margin-bottom: 20px;
+}
+
+.page-size-selector label {
+  margin-right: 10px;
+}
+
+.page-size-selector select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid $border-color;
+}
+
+.search-input {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  label {
+    margin-right: 10px;
+  }
+
+  input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+    width: 20%;
+  }
+}
